@@ -1,0 +1,10 @@
+{
+  "name": "ts-utils",
+  "version": "0.1.0",
+  "description": "Simple Typescript utilities",
+  "author": "Matt Holden",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.3.1"
+  }
+}

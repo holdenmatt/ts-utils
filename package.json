@@ -1,5 +1,5 @@
 {
-  "name": "ts-utils",
+  "name": "@holdenmatt/ts-utils",
   "version": "0.1.0",
   "description": "Simple Typescript utilities",
   "author": "Matt Holden",

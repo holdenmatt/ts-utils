@@ -4,7 +4,23 @@
   "description": "Simple Typescript utilities",
   "author": "Matt Holden",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/holdenmatt/ts-utils.git"
+  },
+  "scripts": {
+    "build": "tsc --emitDeclarationOnly"
+  },
   "devDependencies": {
-    "@types/node": "^20.3.1"
-  }
+    "@types/node": "^20.3.1",
+    "typescript": "^5.1.3"
+  },
+  "keywords": [
+    "typescript",
+    "utilities",
+    "helpers",
+    "guards",
+    "environment",
+    "json"
+  ]
 }

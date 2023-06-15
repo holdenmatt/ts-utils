@@ -9,7 +9,7 @@
     "url": "https://github.com/holdenmatt/ts-utils.git"
   },
   "scripts": {
-    "build": "tsc --emitDeclarationOnly"
+    "build": "tsc"
   },
   "devDependencies": {
     "@types/node": "^20.3.1",

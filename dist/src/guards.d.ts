@@ -4,4 +4,4 @@ export declare const isFile: (obj: unknown) => obj is File;
 export declare const isArray: (obj: unknown) => obj is any[];
 export declare const isRecord: (obj: unknown) => obj is Record<string, unknown>;
 export declare const isError: (error: unknown) => error is Error;
-export declare const isNotNull: <T>(value: T) => value is T;
+export declare const isNotNull: <T>(value: T | null) => value is T;

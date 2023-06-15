@@ -1,8 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
+    "lib": ["dom", "esnext"],
     "skipLibCheck": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
@@ -14,9 +13,8 @@
     "jsx": "preserve",
     "incremental": true,
     "strictNullChecks": true,
-    "declaration": true,
-    "outDir": "dist"
+    "declaration": true
   },
-  "include": ["index.ts", "src/**/*.ts"],
-  "exclude": ["**/node_modules"]
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules"]
 }

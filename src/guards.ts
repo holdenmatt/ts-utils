@@ -6,10 +6,6 @@ export const isFunction = (obj: unknown): obj is Function => {
   return typeof obj === "function";
 };
 
-export const isFile = (obj: unknown): obj is File => {
-  return obj instanceof File;
-};
-
 export const isArray = (obj: unknown): obj is any[] => {
   return Array.isArray(obj);
 };

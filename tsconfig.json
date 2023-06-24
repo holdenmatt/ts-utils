@@ -13,7 +13,9 @@
     "jsx": "preserve",
     "incremental": true,
     "strictNullChecks": true,
-    "declaration": true
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "declarationDir": "./dist/types"
   },
   "include": ["**/*.ts"],
   "exclude": ["node_modules"]

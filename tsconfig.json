@@ -15,7 +15,8 @@
     "strictNullChecks": true,
     "declaration": true,
     "emitDeclarationOnly": true,
-    "declarationDir": "./dist/types"
+    "declarationDir": "./dist/types",
+    "outDir": "./dist"
   },
   "include": ["**/*.ts"],
   "exclude": ["node_modules"]

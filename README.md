@@ -27,3 +27,26 @@ A few simple zero-dependency Typescript utilities I commonly use across projects
 - `JSONArray`
 - `JSONObject`
 - `JSONValue`
+
+### Simple perf timing
+
+- `logElapsedTime`
+
+Usage:
+
+```
+const start = performance.now();
+// Do stuff...
+logElapsedTime(`We did some stuff`, start);
+```
+
+### Assertions
+
+- `AssertionError`
+- `assertError(message: string)`
+- `assertTrue(condition: boolean, message: string)`
+
+### URLs
+
+- `isValidUrl`
+- `getBaseURL` -> `https://example.com` (no path)

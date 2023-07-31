@@ -40,8 +40,9 @@ const start = performance.now();
 logElapsedTime(`We did some stuff`, start);
 ```
 
-### Assertions
+### Errors
 
+- `HttpError`
 - `AssertionError`
 - `assertError(message: string)`
 - `assertTrue(condition: boolean, message: string)`

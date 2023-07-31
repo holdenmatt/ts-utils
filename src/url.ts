@@ -1,4 +1,4 @@
-import { AssertionError } from "./assert";
+import { AssertionError } from "./errors";
 import { isBrowser } from "./environment";
 
 /**

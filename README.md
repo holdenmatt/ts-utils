@@ -50,4 +50,3 @@ logElapsedTime(`We did some stuff`, start);
 ### URLs
 
 - `isValidUrl`
-- `getBaseURL` -> `https://example.com` (no path)

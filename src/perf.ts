@@ -6,21 +6,29 @@ const ResetColors = "\x1b[0m";
  *
  * If no end time is given, use the current time.
  */
-const formatElapsedTime = (
+export const formatElapsedTime = (
+  label: string,
   start: number,
   end: number | undefined = undefined
 ): string => {
   const endTime = end ?? performance.now();
   const elapsed = endTime - start;
 
+  let timeString: string;
   switch (true) {
     case elapsed >= 1000:
-      return `${(elapsed / 1000).toFixed(1)}s`;
+      timeString = `${(elapsed / 1000).toFixed(1)}s`;
+      break;
     case elapsed >= 1:
-      return `${elapsed.toFixed(0)}ms`;
+      timeString = `${elapsed.toFixed(0)}ms`;
+      break;
     default:
-      return `${elapsed.toFixed(3)}ms`;
+      timeString = `${elapsed.toFixed(3)}ms`;
+      break;
   }
+
+  const message = `${FgRed}[${timeString}] ${ResetColors}${label}`;
+  return message;
 };
 
 /**
@@ -31,9 +39,5 @@ export const logElapsedTime = (
   start: number,
   end: number | undefined = undefined
 ) => {
-  const message = `${FgRed}[${formatElapsedTime(
-    start,
-    end
-  )}] ${ResetColors}${label}`;
-  console.debug(message);
+  console.debug(formatElapsedTime(label, start, end));
 };

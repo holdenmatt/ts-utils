@@ -2,11 +2,7 @@ export const isString = (obj: unknown): obj is string => {
   return typeof obj === "string";
 };
 
-export const isFunction = (obj: unknown): obj is Function => {
-  return typeof obj === "function";
-};
-
-export const isArray = (obj: unknown): obj is any[] => {
+export const isArray = <T>(obj: unknown): obj is T[] => {
   return Array.isArray(obj);
 };
 

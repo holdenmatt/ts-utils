@@ -1,6 +1,6 @@
 {
   "name": "@holdenmatt/ts-utils",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "description": "Simple Typescript utilities",
   "author": "Matt Holden",
   "license": "MIT",
@@ -9,9 +9,10 @@
     "type": "git",
     "url": "https://github.com/holdenmatt/ts-utils"
   },
-  "types": "./dist/types/index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "build": "rm -rf dist && tsc --declaration --listEmittedFiles"
+    "build": "rm -rf dist && tsc --listEmittedFiles"
   },
   "devDependencies": {
     "@types/node": "^20.4.7",

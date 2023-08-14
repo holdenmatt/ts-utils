@@ -14,11 +14,8 @@ A few simple zero-dependency Typescript utilities I commonly use across projects
 ### Basic type guards
 
 - `isString`
-- `isFunction`
-- `isFile`
 - `isArray`
 - `isRecord`
-- `isError`
 - `isNotNull`
 
 ### JSON types
@@ -50,3 +47,8 @@ logElapsedTime(`We did some stuff`, start);
 ### URLs
 
 - `isValidUrl`
+
+### Keyboard
+
+- `modKey(shortcut: string)`: Returns a string like "⌘C" (on macOS) or "Ctrl+C" (on Windows/Linux), or undefined (on other platforms).
+- `isModKey(e: KeyboardEvent): boolean`: Is the mod key (Ctrl on Windows/Linux, Command on macOS) pressed?

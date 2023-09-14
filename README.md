@@ -52,3 +52,19 @@ logElapsedTime(`We did some stuff`, start);
 
 - `modKey(shortcut: string)`: Returns a string like "⌘C" (on macOS) or "Ctrl+C" (on Windows/Linux), or undefined (on other platforms).
 - `isModKey(e: KeyboardEvent): boolean`: Is the mod key (Ctrl on Windows/Linux, Command on macOS) pressed?
+
+### Logging
+
+Add a logger:
+
+```
+addLogger((error: Error, cause?: unknown) => { ...do something })
+```
+
+Log an error (with all added loggers):
+
+```
+logError(new Error("Uh oh), {more: "info"})
+```
+
+By default, we console log to the browser only if isDebug is true.

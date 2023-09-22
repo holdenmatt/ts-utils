@@ -16,9 +16,8 @@ const defaultLogger = (error: Error, cause?: unknown) => {
   }
 
   if (cause) {
-    const causeString = JSON.stringify(cause);
     console.error(error);
-    console.error(`Cause: ${causeString}`);
+    console.error(cause);
   } else {
     console.error(error);
   }

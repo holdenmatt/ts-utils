@@ -12,7 +12,14 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "rm -rf dist && tsc --listEmittedFiles"
+    "build": "tsup --dts"
+  },
+  "tsup": {
+    "entry": [
+      "src/index.ts"
+    ],
+    "sourcemap": true,
+    "clean": true
   },
   "devDependencies": {
     "@types/node": "^20.11.5",
@@ -32,8 +39,7 @@
     "json"
   ],
   "files": [
-    "dist/",
-    "src/"
+    "dist"
   ],
   "prettier": {
     "printWidth": 90,

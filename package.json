@@ -12,7 +12,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsup --dts"
+    "build": "rm -rf dist && tsup --dts"
   },
   "tsup": {
     "entry": [
